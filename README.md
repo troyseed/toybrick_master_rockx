@@ -12,7 +12,7 @@
 8. 安卓端源码和apk见https://github.com/troyseed/toybrick_master_rockx_Android
 
 # 1808端部署
-1. sudo dnf install -y python3-opencv
-2. sudo dnf install –y rockx-devel
-3. sudo dnf install –y python3-toybrick-0.2-12.aarch64.rpm
+1. export TMPDIR=/home/toybrick/tmp
+2. sudo dnf install -y python3-opencv
+3. pip3 install --user rockx
 
