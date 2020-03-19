@@ -54,7 +54,7 @@ class rk_socket_client:
 	def __recieve_result(self, conn):
 		length = self.__recvall(conn, 16)
 		stringData = self.__recvall(conn, int(length))
-		data = json.loads(stringData)
+		data = json.loads(stringData.decode())
 
 		return data
 
